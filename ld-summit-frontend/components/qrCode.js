@@ -10,7 +10,7 @@ const QRCodeHome = () => {
     <div className="mx-auto ">
       <div className="qr-wrapper">
         <Canvas
-            text={"http://summit1.frontend.launchdarklydemos.com"}
+            text={"http://summit1.launchdarklydemos.com"}
             options={{
                 type: 'image/jpeg',
                 quality: 0.3,
