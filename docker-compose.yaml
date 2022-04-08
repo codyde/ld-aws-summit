@@ -1,0 +1,44 @@
+version: "3.7"
+
+services:
+
+  ld-summit-frontend:
+    build:
+      context: ./ld-summit-frontend
+      dockerfile: ./Dockerfile
+    ##############################ds######################################
+    # This field needs to be updated to reflect the demo station you are
+    # It should be either ld-summit-frontend:1 or ld-summit-frontend:2
+    image: codydearkland/ld-summit-frontend:1
+    ####################################################################
+    depends_on:
+      - api
+    ports:
+      - 3000:3000
+    networks:
+      - demo-network
+
+  api:
+    build:
+        context: ./ld-summit-api
+        dockerfile: ./Dockerfile
+    image: codydearkland/ld-summit-api:1
+    depends_on:
+     - db
+    ports:
+      - 5010:5010
+    networks:
+      - demo-network
+
+  db:
+    build:
+        context: ./db
+        dockerfile: ./Dockerfile
+    image: codydearkland/db:summit
+    networks:
+      - demo-network
+
+
+networks:
+  demo-network:
+    driver: bridge
