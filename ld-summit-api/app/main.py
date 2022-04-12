@@ -13,7 +13,7 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
 CORS(app)
 
-LD_KEY = "sdk-e943e104-8354-4ebc-a6e8-6696e8ff97f7"
+LD_KEY = "sdk-1f9731de-482d-46c8-8531-83b201f8a91d"
 
 fallback = '{"dbinfo":"localhost","dbname":"localdb"}'
 
