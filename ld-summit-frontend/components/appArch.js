@@ -35,7 +35,7 @@ export default function AppArch() {
                 </div>
                 {/*body*/}
                 <div className="p-6">
-                <img className="mx-auto" src="./rough-arch.png" alt="launch-darkly" />
+                <img className="mx-auto" src="./ld-summit.png" alt="launch-darkly" />
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
