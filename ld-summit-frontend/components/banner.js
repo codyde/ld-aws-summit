@@ -60,15 +60,14 @@ export default function Banner(flags) {
   return (
     <StyleRoot>
 
-        <div style={styles.fadeup}>
+<div style={styles.fadeup}>
           <div className="grid shadow-2xl bg-ldgray p-10 lg:px-28 py-8">
             <img
-              className="mx-auto h-full"
+              className="mx-auto max-h-30"
               src="./ld-white-wide.png"
-              width="550"
               alt="launch-darkly"
             />
-            <div className="mx-auto py-4 text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-ldyellow to-lddblue text-center italic">
+            <div className="mx-auto py-4 text-2xl md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-ldyellow to-lddblue text-center italic">
               Welcome to AWS Summit!
             </div>
             <div className="mx-auto pt-4">
