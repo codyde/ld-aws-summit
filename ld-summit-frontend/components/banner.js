@@ -58,9 +58,7 @@ export default function Banner(flags) {
   };
 
   return (
-    <StyleRoot>
-
-        <div style={styles.fadeup}>
+        <div>
           <div className="grid shadow-2xl bg-ldgray p-10 lg:px-28 py-8">
             <img
               className="mx-auto max-h-30"
@@ -75,7 +73,5 @@ export default function Banner(flags) {
             </div>
           </div>
         </div>
-
-    </StyleRoot>
   );
 }
