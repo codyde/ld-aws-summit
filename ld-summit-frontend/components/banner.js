@@ -26,6 +26,7 @@ const styles = {
 
 export default function Banner(flags) {
   const LDClient = useLDClient();
+  console.log(flags.text)
 
   const [userState, setUserState] = useState({
     username: "",
@@ -58,20 +59,20 @@ export default function Banner(flags) {
   };
 
   return (
-<div>
-          <div className="grid shadow-2xl bg-ldgray p-10 lg:px-28 py-8">
-            <img
-              className="mx-auto max-h-30"
-              src="./ld-white-wide.png"
-              alt="launch-darkly"
-            />
-            <div className="mx-auto py-4 text-2xl md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-ldyellow to-lddblue text-center italic">
-              Welcome to AWS Summit!
-            </div>
-            <div className="mx-auto pt-4">
-              <AppArch />
-            </div>
-          </div>
+    <div>
+      <div className="grid shadow-2xl bg-ldgray p-10 lg:px-28 py-8">
+        <img
+          className="mx-auto max-h-30"
+          src="./ld-white-wide.png"
+          alt="launch-darkly"
+        />
+        <div className="mx-auto py-4 text-2xl md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-ldyellow to-lddblue text-center italic">
+          {flags.text}
         </div>
+        <div className="mx-auto pt-4">
+          <AppArch />
+        </div>
+      </div>
+    </div>
   );
 }
