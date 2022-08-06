@@ -9,7 +9,7 @@ services:
     ##############################ds######################################
     # This field needs to be updated to reflect the demo station you are
     # It should be either ld-summit-frontend:1 or ld-summit-frontend:2
-    image: codydearkland/ld-summit-frontend:1
+    image: codydearkland/ld-summit-frontend:3
     ####################################################################
     depends_on:
       - api

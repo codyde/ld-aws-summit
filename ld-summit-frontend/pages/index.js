@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="h-screen bg-ld-ls-wide bg-no-repeat bg-center bg-cover">
       <Head>
-        <title>Summit1 - LaunchDarkly</title>
+        <title>Summit3 - LaunchDarkly</title>
         <meta name="description" content="Built for exploring LaunchDarkly" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
